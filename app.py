@@ -19,7 +19,11 @@ def cute():
 
 @app.route('/puppy/<name>')
 def puppy(name):
-    return f'<h1>This is the puppy name: {name.upper()}'
+    if name[-1] != 'y':
+        name = name + "y"
+    else:
+        name = name[0:-1] + "iful"
+    return f'<h1>This is the puppy name: {name}'
 
 if __name__ == '__main__':
     app.run(debug=True)
