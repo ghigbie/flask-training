@@ -13,6 +13,10 @@ def about():
 def contact():
     return '<h1>Contact Page</h1>'
 
+@app.route('/puppy/<name>')
+def puppy(name):
+    return f'<h1>This is the puppy name: {name}'
+
 if __name__ == '__main__':
     app.run()
 
