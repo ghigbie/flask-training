@@ -6,7 +6,7 @@ def index():
     return '<h1>Home Page</h1>'
 
 @app.route('/about')
-def index():
+def about():
     return '<h1>About Page</h1>'
 
 if __name__ == '__main__':
