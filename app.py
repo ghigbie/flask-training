@@ -13,10 +13,14 @@ def about():
 def contact():
     return '<h1>Contact Page</h1>'
 
+@app.route('/cute')
+def cute():
+    return '<h1><Puppies are Cute!/h1>'
+
 @app.route('/puppy/<name>')
 def puppy(name):
     return f'<h1>This is the puppy name: {name.upper()}'
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
 
