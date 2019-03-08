@@ -15,7 +15,7 @@ def contact():
 
 @app.route('/puppy/<name>')
 def puppy(name):
-    return f'<h1>This is the puppy name: {name}'
+    return f'<h1>This is the puppy name: {name.upper()}'
 
 if __name__ == '__main__':
     app.run()
