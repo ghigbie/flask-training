@@ -9,6 +9,10 @@ def index():
 def about():
     return '<h1>About Page</h1>'
 
+@app.route('/contact')
+def contact():
+    return '<h1>Contact Page</h1>'
+
 if __name__ == '__main__':
     app.run()
 
