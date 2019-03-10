@@ -6,7 +6,8 @@ def index():
     name = "Buddy"
     letters = list(name)
     pup_dictionary = {'pup_name': 'Sammy', 'pup_type': 'Laborador'}
-    return render_template('home.html', name=name, letters=letters, pup_dictionary=pup_dictionary)
+    puppies = ['Sammy', 'Fluffy', 'Albert', 'Cuddles']
+    return render_template('home.html', name=name, letters=letters, pup_dictionary=pup_dictionary, puppies=puppies)
 
 @app.route('/about')
 def about():

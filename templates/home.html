@@ -16,5 +16,21 @@
         <li>{{ letter }} - is good</li>
         {% endfor %}
     </ul>
+    <ul>
+        {% for element in letters %}
+                <li>{{ element|e }}</li>
+        {% endfor %}
+    </ul>
+    {% if 'Sammy' in puppies %}
+        <p>Found you Sammy</p>
+    {% else %}
+        <p>No Sammy here</p>
+    {% endif %}
+
+    {% if 'Rufus' in puppies %}
+        <p>Found you Rufus</p>
+    {% else %}
+        <p>No Rufus here</p>
+    {% endif %}
 </body>
 </html>
