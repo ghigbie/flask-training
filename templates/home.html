@@ -11,5 +11,10 @@
     <h1>All about Puppies</h1>
     <h2>Hello {{ name }}</h2>
     <h2>Hello {{ pup_dictionary['pup_name']}}</h2>
+    <ul>
+        {% for letter in letters %}
+        <li>{{ letter }} - is good</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
